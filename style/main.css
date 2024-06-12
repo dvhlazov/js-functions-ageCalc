@@ -8,60 +8,61 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+h2 {
+    text-align: center;
 }
 form {
+    position: relative;
     padding-top: 50px;
-}
-input#form_name {
-    height: 50px;
-    width: 300px;
-    border: 7px solid black;
-    font-size: 32px;
     
 }
-input#form_name:focus {
+label {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 40px;
+    padding-right: 10px;
+}
+input {
+    padding: 20px;
+    font-size: 26px;
+    width: 200px;
+    outline: none;
+    border: 1px solid rgb(0, 128, 0);
+}
+input:focus {
+    border-color: rgb(250, 5, 5);
     outline: none;
 }
-input#form_name.animated_border{
-    animation: borderColorChange 5s infinite;
-
+#err {
+    color: rgb(252, 6, 6);
+    font-size: 36px;
 }
-@keyframes borderColorChange {
-    0% {
-        border-color: black;
-    }
-    25% {
-        border-color: rgb(125, 255, 125);
-    }
-    50% {
-        border-color: rgb(84, 84, 202);
-    }
-    75% {
-        border-color: rgb(255, 0, 0);
-    }
-    100% {
-        border-color: black;
-    }
+#real_age_display {
+    font-size: 36px;
+    font-weight: 600;
 }
-.description {
-    margin-top: 40px;
+button {
+    padding-bottom: 50px;
+    position: absolute;
 }
-span.descript {
-    
-    color: rgb(130, 214, 5);
+#btn:hover {
+background-color: rgb(165, 216, 199);
 }
-.alt_description, .max_lenght {
-    color: red;
-    display: none;
+button p {
+    padding-top: 15px;
+    font-weight: 600;
+    font-size: 14px;
 }
-.visible {
-    display: block;
-    color: red;
-}
-.max_lenght1 {
-    display: block;
-    color: red;
-}
-.red_color {
-    color: red;
+#btn {
+    width: 90px;
+    height: 76px;
+    background-color: rgb(127, 255, 212);
+    color: #000;
+    border-radius: 2px;
+    border: 1px solid #000;
+    margin-left: 20px;
 }
